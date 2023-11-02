@@ -1,0 +1,123 @@
+.footer {
+  margin: 0;
+  padding:  2rem  0;
+  background-image: url("../assets/images/footer3.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.footer_contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo_title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: transparent;
+  background-image: linear-gradient(to right,
+      var(--primary-color),
+      #310404,
+      var(--second-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer_logo_box {
+  display: flex;
+  flex-direction: column;
+  gap:  1.5rem ;
+}
+
+.icon_footer {
+  width:  3rem ;
+  height: 100%;
+}
+
+.contact_email {
+  display: flex;
+  gap:  1rem ;
+  font-weight: 500;
+  align-items: center;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all .7s ease;
+}
+
+.contact_email p:hover {
+  text-decoration: underline;
+}
+
+.contacts_box,
+.mobile_version {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height:  11rem ;
+}
+
+.mobile_version {
+  display: none;
+}
+
+.contacts_box_title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.footer_nav {
+  display: flex;
+  flex-direction: column;
+  gap:  1rem ;
+}
+
+address {
+  all: initial;
+  font-family: 'Roboto' sans-serif;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer_link {
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.footer_link.activeLink {
+  text-decoration: underline;
+
+}
+
+.footer_link:hover {
+  color: var(--second-color);
+}
+
+@media screen and (max-width: 768px) {
+  .contacts_box {
+    display: none;
+  }
+
+  .mobile_version {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .contacts_box_title {
+    font-size: 1.4rem;
+    margin-bottom:  1.5rem ;
+  }
+
+  .footer_contacts {
+    justify-content: center;
+    align-items: center;
+    gap:  4rem ;
+  }
+}

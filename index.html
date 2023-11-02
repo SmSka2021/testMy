@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="icon" href="./assets/icons/favicon.ico" >
+    <title>ArtHome</title>
+    <meta name="description" content="Здесь мы пишем описание страницы" />
+    <meta name="keywords" content="ключевые слова, ключевик, ключевое слово, ключ, keywords" />
+    <link rel="stylesheet" href="./style.css" >
+</head>
+
+<body id="body">
+    <header class="header">
+        <div class="wrapper flex_box_between">
+            <div class="flex_box_between">
+                <img class="header_logo_img" src="./assets/images/logo2.png" alt="logo" >
+                <a href="./index.html" class="header_logo_title">ArtHome </a>
+            </div>
+            <nav class="header_nav">
+                <ul class="header_list">
+                    <li class="header_item activ">
+                        <a href="./index.html" class="header_link activeLink">Home</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="./service_1.html" class="header_link">Services</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="./portfolio.html" class="header_link">About Us</a>
+                    </li>
+                    <li class="header_item">
+                        <a href="./contact.html" class="header_link">Contacts</a>
+                    </li>
+                </ul>
+                <div class="overlay" id="overlay_hamburger"></div> 
+                <div class="hamburger">
+                    <span class="hamburger_line"></span>
+                </div>          
+                <div class="overlay" id="overlay_modal"></div>   
+                <div class="modal"></div> 
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="intro">
+            <div class="wrapper">
+                <article class="intro_content">
+                    <h1 class="intro_content_title">
+                        Interior design, <br >
+                        renovation of residential <br >
+                        and commercial real estate
+                    </h1>
+                    <hr class="line" >
+                    <p class="intro_content_text">
+                        We will carry out repairs on time <br >
+                        with contractual guarantee
+                    </p>
+                    <div class="intro_content_button">
+                        <button type="button" class="btn js_open_modal">
+                            Quick order
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="services">
+            <div class="wrapper">
+                <h2 class="section_title">We carry out a wide range of work</h2>
+                <p class="section_text">
+                    from small interior renovations to facade renovations<br >
+                    to facade renovations
+                </p>
+                <hr class="line line_dark" >
+                <div class="services_content_cards">
+                    <div class="services_card">
+                        <div class="services_card_box">
+                            <p class="services_card_title">Facade design</p>
+                            <a href="./service_1.html" class="btn"> more details</a>
+                        </div>
+                    </div>
+                    <div class="services_card">
+                        <div class="services_card_box">
+                            <p class="services_card_title">Interior Design</p>
+                            <a href="./service_1.html" class="btn"> more details</a>
+                        </div>
+                    </div>
+                    <div class="services_card">
+                        <div class="services_card_box">
+                            <p class="services_card_title">Facade restoration</p>
+                            <a href="./service_1.html" class="btn"> more details</a>
+                        </div>
+                    </div>
+                    <div class="services_card">
+                        <div class="services_card_box">
+                            <p class="services_card_title">Interior restoration</p>
+                            <a href="./service_1.html" class="btn"> more details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="wrapper">
+                <h2 class="section_title">
+                    We offer the most <span>profitable</span> solutions <br >for our
+                    <span>clients</span>
+                </h2>
+                <hr class="line line_dark" >
+                <p class="section_text">Choose the plan that suits you</p>
+                <div class="price_content_cards">
+                    <div class="price_card flex_box_column">
+                        <div class="flex_box_column box_item_card">
+                            <img class="price_card_img" src="./assets/images/price_econom.jpg" alt="img" >
+                            <h6 class="price_card_title">Tariff <span>'Economy'</span></h6>
+                            <ul>
+                                <li class="price_card_text">ceiling/floor/wall repairs</li>
+                                <li class="price_card_text">restoration of communications</li>
+                                <li class="price_card_text">repair of electrical networks</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn_small js_open_modal">choose</button>
+                    </div>
+                    <div class="price_card flex_box_column">
+                        <div class="flex_box_column box_item_card">
+                            <img class="price_card_img" src="./assets/images/price_comfort.jpg" alt="img" >
+                            <h6 class="price_card_title">Tariff <span>'Comfort'</span></h6>
+                            <ul>
+                                <li class="price_card_text">ceiling/floor/wall repairs</li>
+                                <li class="price_card_text">restoration of communications</li>
+                                <li class="price_card_text">repair of electrical networks</li>
+                                <li class="price_card_text">individual design</li>
+                                <li class="price_card_text">furniture selection</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn_small js_open_modal">choose</button>
+                    </div>
+                    <div class="price_card flex_box_column">
+                        <div class="flex_box_column box_item_card">
+                            <img class="price_card_img" src="./assets/images/price_midium.jpg" alt="img" >
+                            <h6 class="price_card_title">Tariff <span>'Medium'</span></h6>
+                            <ul>
+                                <li class="price_card_text">ceiling/floor/wall repairs</li>
+                                <li class="price_card_text">restoration of communications</li>
+                                <li class="price_card_text">repair of electrical networks</li>
+                                <li class="price_card_text">individual design</li>
+                                <li class="price_card_text">furniture selection</li>
+                                <li class="price_card_text">facade renovation</li>
+                                <li class="price_card_text">roof repair</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn_small js_open_modal">choose</button>
+                    </div>
+                    <div class="price_card flex_box_column">
+                        <div class="flex_box_column box_item_card">
+                            <img class="price_card_img" src="./assets/images/price_evro2.jpg" alt="img" >
+                            <h6 class="price_card_title">
+                                Tariff <span>'EuroStandart'</span>
+                            </h6>
+                            <ul>
+                                <li class="price_card_text">ceiling/floor/wall repairs</li>
+                                <li class="price_card_text">restoration of communications</li>
+                                <li class="price_card_text">repair of electrical networks</li>
+                                <li class="price_card_text">individual design</li>
+                                <li class="price_card_text">furniture selection</li>
+                                <li class="price_card_text">facade renovation</li>
+                                <li class="price_card_text">roof repair</li>
+                                <li class="price_card_text">individual design facade</li>
+                            </ul>
+                        </div>
+                        <button type="button" class="btn btn_small js_open_modal">choose</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section_order">
+            <div class="wrapper">
+                <div class="container_order">
+                    <div class="box_order_title">
+                        <h6 class="section_order_title">
+                            Order measurements and preliminary assessment of the property
+                            for <span>FREE</span>
+                        </h6>
+                        <p class="section_order_text">
+                           <b> During the free visit <br >
+                            measurement engineer:</b>
+                        </p>
+                        <ul class="section_order_list">
+                            <li class="section_order_text">
+                                will take accurate measurements
+                            </li>
+                            <li class="section_order_text">
+                                will guide you according to deadlines
+                            </li>
+                            <li class="section_order_text">
+                                will help you decide with type of repair
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contacts__item">
+                        <h6 class="contact_title">Provide your contacts</h6>
+                        <p class="contact_text">
+                            and we will call you back to set up <br >
+                            a convenient time for measurement
+                        </p>
+                        <form action="./mail.php" method="post" class="form">
+                            <input type="text" class="name_form" name="name" id="name" placeholder="Name" required >
+                            <p class="error error_name">Name at least 3 characters</p>
+                            <input type="email" class="email_form" name="email" id="email" placeholder="E-mail" required >
+                            <p class="error error_email">Incorrect email</p>
+                            <input type="tel" class="tel_form" name="phone" id="tel" placeholder="Phone +375331231212" required >
+                            <p class="error error_tel">Incorrect phone</p>
+                            <div class="container_checkbox">
+                                <label class="label_checkbox">
+                                    <input type="checkbox" name="checkbox" id="checkbox" required >
+                                    <span>I accept Privacy policy</span>
+                                    <a href="./privacy_policy.html">Our Policy</a>
+                                </label>
+                            </div>
+                            <button type="submit"  id="btnForm" class="btn btn_small btn_center">
+                                Order call
+                            </button>
+                               <!-- <button type="button" onclick="window.location.href='./thanks.html'" id="btnForm" class="btn btn_small btn_center">
+                                Order call
+                            </button> -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_advantage">
+            <div class="wrapper">
+                <h2 class="section_title">Why do they <span> trust us?</span></h2>
+                <hr class="line line_dark" >
+                <div class="advantage_content_cards">
+                    <div class="advantage_card_content">
+                        <img class="advantage_card_img" src="./assets/images/advantage2.png" alt="img" >
+                        <div class="advantage_card_text-box">
+                            <h6 class="advantage_card_title">Experience</h6>
+                            <p class="advantage_card_text">
+                                Our craftsmen have more than 10 years of experience
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantage_card_content">
+                        <img class="advantage_card_img" src="./assets/images/advantage1.png" alt="img" >
+                        <div class="advantage_card_text-box">
+                            <h6 class="advantage_card_title">Guarantees</h6>
+                            <p class="advantage_card_text">We guarantee our work 2 years</p>
+                        </div>
+                    </div>
+                    <div class="advantage_card_content">
+                        <img class="advantage_card_img" src="./assets/images/advantage5.png" alt="img" >
+                        <div class="advantage_card_text-box">
+                            <h6 class="advantage_card_title">Team</h6>
+                            <p class="advantage_card_text">
+                                Quarterly our masters undergo professional certification
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantage_card_content">
+                        <img class="advantage_card_img" src="./assets/images/advantage3.png" alt="img" >
+                        <div class="advantage_card_text-box">
+                            <h6 class="advantage_card_title">Suppliers</h6>
+                            <p class="advantage_card_text">
+                                Special conditions from furniture suppliers for our clients
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantage_card_content">
+                        <img class="advantage_card_img" src="./assets/images/advantage4.png" alt="img" >
+                        <div class="advantage_card_text-box">
+                            <h6 class="advantage_card_title">CCTV</h6>
+                            <p class="advantage_card_text">
+                                We will install a CCTV camera for repairs, in real mode time
+                                from your computer or phone
+                            </p>
+                        </div>
+                    </div>
+                    <div class="advantage_card_content">
+                        <img class="advantage_card_img" src="./assets/images/advantage2.png" alt="img" >
+                        <div class="advantage_card_text-box">
+                            <h6 class="advantage_card_title">Agreement</h6>
+                            <p class="advantage_card_text">
+                                All terms and guarantees stated in the contract
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_say">
+            <div class="wrapper">
+                <div class="say">
+                    <div class="say__name">
+                        <h2 class="section_title">
+                            <span>What people say about Us.</span>
+                        </h2>
+                        <hr class="line line_dark line_big hidden_line" >
+                    </div>
+                    <div class="wrapper_say">
+                        <input type="radio" name="point" id="slide1" checked >
+                        <input type="radio" name="point" id="slide2" >
+                        <input type="radio" name="point" id="slide3" >
+                        <div class="slider">
+                            <div class="slides slide2 slaide__stop" id="first2">
+                                <div class="slaide__user">
+                                    <img src="./assets/images/ellipse.png" alt="photo client" >
+                                    <p>
+                                        “On the Windows talking painted pasture yet its express
+                                        parties use. Sure last upon he same as knew next. Of
+                                        believed or diverted no.”
+                                    </p>
+                                    <p class="slaide__user--name">Mike Taylor</p>
+                                    <p class="slaide__user--town">Lahore, Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="slides slide3 slaide__stop" id="second2">
+                                <div class="slaide__user">
+                                    <img src="./assets/images/ellipse.png" alt="photo client" >
+                                    <p>
+                                        “Of believed or diverted no. Sure last upon he same as
+                                        knew next. On the Windows talking painted pasture yet its
+                                        express parties use. ”
+                                    </p>
+                                    <p class="slaide__user--name">Chris Thomas</p>
+                                    <p class="slaide__user--town">CEO of Red Button</p>
+                                </div>
+                            </div>
+                            <div class="slides slide1 slaide__stop" id="third2">
+                                <div class="slaide__user">
+                                    <img src="./assets/images/ellipse.png" alt="photo client" >
+                                    <p>
+                                        “All work was done with high quality. There were no
+                                        problems with mutual understanding. The repair was
+                                        completed on time and without any complaints. I was
+                                        pleased with the work done.”
+                                    </p>
+                                    <p class="slaide__user--name">Tom Bred</p>
+                                    <p class="slaide__user--town">Rome, Itali</p>
+                                </div>
+                            </div>
+                            <div class="slides slide1" id="first">
+                                <div class="slaide__user">
+                                    <img src="./assets/images/photo_client4.png" alt="photo client" >
+                                    <p>
+                                        “I ordered a turnkey renovation of a new building. We
+                                        quickly started work. Finished a week ahead of schedule.
+                                        All work was done superbly. There are only positive
+                                        emotions left!”
+                                    </p>
+                                    <p class="slaide__user--name">Mike Taylor</p>
+                                    <p class="slaide__user--town">Lahore, Pakistan</p>
+                                </div>
+                            </div>
+                            <div class="slides slide2" id="second">
+                                <div class="slaide__user">
+                                    <img src="./assets/images/photo_client.png" alt="photo client" >
+                                    <p>
+                                        “The repair was carried out very efficiently and on time.
+                                        I plan to continue to cooperate with this company.”
+                                    </p>
+                                    <p class="slaide__user--name">Chris Thomas</p>
+                                    <p class="slaide__user--town">CEO of Red Button</p>
+                                </div>
+                            </div>
+                            <div class="slides slide3" id="third">
+                                <div class="slaide__user">
+                                    <img src="./assets/images/photo_client1.png" alt="photo client" >
+                                    <p>
+                                        “Sure last upon he same as knew next. On the Windows
+                                        talking painted pasture yet its express parties use. Of
+                                        believed or diverted no.”
+                                    </p>
+                                    <p class="slaide__user--name">Tom Bred</p>
+                                    <p class="slaide__user--town">Rome, Itali</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="controls">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="partner">
+            <div class="wrapper">
+                <h2 class="section_title">
+                    We use only the best materials from <span> 80+</span> global
+                    manufacturers
+                </h2>
+                <hr class="line line_dark" >
+                <p class="section_text">Some of them:</p>
+                <div class="stroy_content_cards">
+                    <img class="partner_card_img" src="./assets/images/stroy15.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy2.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy3.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy4.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy5.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy6.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy7.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy8.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy9.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy10.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy11.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy12.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy13.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy16.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy1.png" alt="img" >
+                    <img class="partner_card_img" src="./assets/images/stroy14.png" alt="img" >
+                </div>
+            </div>
+        </section> 
+    </main>
+
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer_contacts">
+                <div class="footer_logo_box">
+                    <img class="header_logo_img" src="./assets/images/logo2.png" alt="logo" >
+                    <a href="./index.html" class="header_logo_title">ArtHome </a>
+                </div>
+                <div class="footer_nav">
+                    <a href="./index.html" class="footer_link activeLink">Home </a>
+                    <a href="./service_1.html" class="footer_link">Services</a>
+                    <a href="./portfolio.html" class="footer_link">About Us</a>
+                    <a href="./privacy_policy.html" class="footer_link">Privacy Policy</a>
+                    <a href="./contact.html" class="footer_link">Contacts</a>
+                </div>
+
+                <div class="contacts_box">
+                    <p class="contacts_box_title">For questions and suggestions</p>
+                    <div class="contact_email">
+                        <img class="icon_footer" src="./assets/icons/emaill_icon.png" alt="email" >
+                         <a  class="contact_email emailDomain">artHome@yandex.ru</a>
+                     </div>                   
+                    <a href="tel:+375336454419" class="contact_email">
+                        <img class="icon_footer" src="./assets/icons/tel_icon.png" alt="phone" >
+                        <p>+375(33)6454419</p>
+                    </a>
+                </div>
+                <div class="contacts_box">
+                    <p class="contacts_box_title">We are waiting for your visit</p>
+                    <a href="https://goo.gl/maps/5JtHKc1qG3FTAKKS9" target="_blank" class="contact_email">
+                        <img class="icon_footer" src="./assets/icons/location_icon.png" alt="address" >
+                        <address><p>18 Eythorne Park, London</p></address>
+                    </a>
+                </div>
+                <div class="mobile_version">
+                     <p class="contacts_box_title">For questions and suggestions</p>
+                     <div class="contact_email">
+                        <img class="icon_footer" src="./assets/icons/emaill_icon.png" alt="email" >
+                         <a  class="contact_email emailDomain">artHome@yandex.ru</a>
+                     </div>
+                   
+                    <a href="tel:+375336454419" class="contact_email">
+                        <img class="icon_footer" src="./assets/icons/tel_icon.png" alt="phone" >
+                        <p>+375(33)6454419</p>
+                    </a>
+                    <a href="https://goo.gl/maps/5JtHKc1qG3FTAKKS9" target="_blank" class="contact_email">
+                        <img class="icon_footer" src="./assets/icons/location_icon.png" alt="address" >
+                        <address><p>18 Eythorne Park, London</p></address>
+                    </a>
+                </div>
+            </div>
+        </div>
+          <!-- START Cookie-Alert -->
+    <div id="cookie_note">
+        <div>
+            <p>
+                We use cookies and services for collecting technical data from
+                visitors (IP address, location, etc.) to ensure functionality and
+                improve the quality of service.<br >By remaining on our website, you
+                agree to the terms and conditions use of cookies.
+            </p>
+            <p>
+                Read our privacy and usage proposals files
+                <a class="warning__read" href="./privacy_policy.html" target="_blank">
+                    <b>click here</b></a>
+            </p>
+        </div>
+        <div class="btn_cookie_box">
+            <button class="btn_cookie">I agree</button>
+            <a class="warning__read" href="https://en.wikipedia.org/wiki/Cookie" target="_blank">What are cookies</a>
+        </div>
+    </div>
+    <!-- END Cookie-Alert -->
+    </footer>
+    <script src="./scripts/script_email.js"></script>
+    <script src="./scripts/script_cookies.js"></script>
+    <script src="./scripts/script_modal_form.js"></script>
+    <script src="./scripts/script_hamburger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.services {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.services_content_cards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3rem;
+  margin: 5rem 0;
+}
+
+.services_card {
+  height: 30rem;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 8rem 0 5rem;
+}
+
+.services_card:before,
+.services_page_card::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.services_card_box {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+}
+
+.services_card:nth-child(1) {
+  background: url("../assets/images/design_out2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services_card:nth-child(2) {
+  background: url("../assets/images/design_in3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services_card:nth-child(3) {
+  background: url("../assets/images/recovery_out2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services_card:nth-child(4) {
+  background: url("../assets/images/recovery_in2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@media (max-width: 768px) {
+  .services_card {
+    height: 25rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .services_content_cards {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}

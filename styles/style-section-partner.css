@@ -1,0 +1,19 @@
+.partner {
+    width: 100%;
+}
+
+.stroy_content_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 1.5rem;
+    padding:   5rem  0;
+    margin-bottom:  7rem ;
+}
+
+@media screen and (max-width: 500px) {
+
+    .partner_card_img {
+        width: 90px;
+    }
+}

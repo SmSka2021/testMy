@@ -1,0 +1,16 @@
+
+.thanks_box {
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../assets/images/say4.jpg');
+    background-size: cover;
+    background-position: bottom;
+  }
+  
+  .contact_img_thanks {
+    width:  10rem ;
+  }
+  
