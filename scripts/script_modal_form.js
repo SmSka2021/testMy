@@ -246,7 +246,3 @@ openModalButtons.forEach((btn) =>
     modalFormActions();
   })
 );
-
-document.addEventListener("itc.successSendForm", (e) => {
-  console.log("iiii");
-});

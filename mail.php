@@ -1,6 +1,5 @@
 <?php
-//$to = 'info@' . $_SERVER[SERVER_NAME]; 
-$to = 'Sve-Mac@yandex.ru'; 
+$to = 'info@' . $_SERVER[SERVER_NAME]; 
 $them = 'You have received a letter from your site'; 
 $fio = 'Name User: ' . $_POST['name'];
 $email = 'E-mail: ' . $_POST['email'];
